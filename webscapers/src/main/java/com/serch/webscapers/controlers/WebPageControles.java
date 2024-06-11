@@ -5,6 +5,7 @@ import com.serch.webscapers.models.WebPages;
 import com.serch.webscapers.services.SpiderService;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import com.serch.webscapers.services.WebScraperServices;
 @RestController
+@CrossOrigin(origins = "*")
 public class WebPageControles {
     @Autowired
     WebPageRespository reposirty;
